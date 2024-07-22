@@ -8,8 +8,8 @@ num1 = int(input("Type the first number: "))
 num2 = int(input("Type the second number: "))
 
 if num1 > num2:
-    print(f'Number {num1} is the greatest.')
+    print(f'Number {num1} is greater than {num2}.')
 elif num1 == num2:
-    print(f'The two numbers typed are equal.')
+    print(f'The two numbers typed {num1} and {num2} are equal.')
 else:
-    print(f'Number {num2} is the greatest.')
+    print(f'Number {num2} is greater than {num1}.')
