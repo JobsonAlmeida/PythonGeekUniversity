@@ -5,7 +5,7 @@ lidos.
 
 numbers = [] 
 for i in range(0,6):
-    number = int( input(f"Digite o número {i+1}: ") )
+    number = int( input(f"Digite o número {i+1}/6: ") )
     numbers.append(number)
 
 print("Os números digitados foram:")
