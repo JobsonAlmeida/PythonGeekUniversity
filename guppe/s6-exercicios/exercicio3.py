@@ -7,7 +7,7 @@ possui.
 numbers = []
 
 for i in range(0,10):
-    numbers.append(int(input(f"Digite o numero da posição {i+1}: ")))
+    numbers.append(int(input(f"Digite o numero da posição {i+1}/10: ")))
 
 pares = 0
 for valor in numbers:
