@@ -5,9 +5,8 @@ imprima ela por extenso como “1 de janeiro de 20204”
 """
 
 def converte_data(data):
-    dia = data[0:2]
-    mes = data[3:5]
-    ano = data[6:10]
+
+    [dia, mes, ano] = data.split("/")
 
     #tratando do dia
     if(int(dia) < 10):
@@ -38,6 +37,8 @@ def converte_data(data):
         mes = "novembro"
     elif(int(mes) == 12):
         mes = "dezembro"
+    else:
+        mes = "desconhecido"
     
     return dia + " de " + mes + " de " + ano
 
