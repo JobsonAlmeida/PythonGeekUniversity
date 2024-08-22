@@ -79,3 +79,5 @@ c_para_f = lambda dado: ( dado[0], (9/5)*dado[1] + 32)
 
 cidades_f = map(c_para_f, cidades)
 print(list(cidades_f))
+
+
