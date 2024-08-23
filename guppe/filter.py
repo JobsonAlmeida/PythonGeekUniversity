@@ -46,3 +46,65 @@ res = filter(lambda x: len(x) > 0, paises )
 
 print(list(res))
 
+print("---- lista tweets ---- ")
+
+# A diferença entre map e filter
+
+# map recebe dois parâmetros e 
+
+
+usuarios = [
+    {
+        "username": "samuel",
+        "tweets": ["Eu adoro bolos", "Eu adoro pizzas"]
+    },
+    {
+        "username": "carla",
+        "tweets": ["Eu gosto de pizzas"]
+    },
+    {
+         "username": "jeff",
+         "tweets": []
+    },
+    {
+        "username": "bob123",
+        "tweets": []
+    },
+    {
+        "username": "doggo",
+        "tweets": ["Eu gosto de cachorros", "Vou sair hoje"]
+    },
+    {
+        "username": "gal",
+        "tweets": []
+    },
+]
+
+print(usuarios)
+
+def verifica(dado):
+    if(len(dado["tweets"]) != 0):
+        return True
+    else:
+        return False
+
+
+print("--- usuarios não inativos ---")
+usuarios_nao_inativos = filter(lambda dado: len(dado["tweets"]), usuarios)
+
+print(list(usuarios_nao_inativos))
+
+print("--- usuarios inativos ---")
+
+usuarios_inativos = filter(lambda dado: not len(dado["tweets"]), usuarios)
+print(list(usuarios_inativos))
+
+print(" ------------------------ ")
+# Combinar filter e map
+# Exemplo: Devemos criar uma lista conttendo "Sua isntrutora é + nome ", desde que o nome tenha menos
+# de 5 caracteres
+
+nomes = ["Vanessa", "Ana", "Maria"]
+
+lista = list(map( lambda nome: f"Sua instrutora é {nome}" , filter(lambda nome: len(nome)< 5, nomes)))
+print(lista)
