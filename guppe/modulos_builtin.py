@@ -38,8 +38,7 @@ print(random())
 import random
 print(random.random())
 
-# Costumamos a utilizar tuple para colocar multiplos imports de um mesmo módulo
-
+# Costumamos utilizar tuple para colocar multiplos imports de um mesmo módulo
 from random import (
     random,
     randint,
