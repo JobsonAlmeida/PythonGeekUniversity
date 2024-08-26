@@ -30,7 +30,7 @@ print(type(outra_funcao()))
 
 # função para jogar cara ou coroa
 
-from random import random
+from modulo_random import random
 
 def joga_moeda():
     if random() > 0.5:
