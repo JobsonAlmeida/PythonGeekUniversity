@@ -1,0 +1,16 @@
+Eu estou estudando na Geek University e estou aprendendo muito no curso de Progrmação em Python: Essencial
+Outro texto
+
+"""
+Leitura de arquivos
+
+open() -> função integrada para abrir aquivos
+Na forma mais simples de utilização recebe apenas o caminho para o arquivo. Essa função retorna um _io.TextIOWrapper
+
+Obs.: Por padrão a função open abre o arquivo para leitura. Este arquivo deve existir ou então teremos o
+erro FileNotFoundError
+
+<_io.TextIOWrapper name='texto.txt' mode='r' encoding='cp1252'>
+
+mode='r' -> indica que modo de abertura do arquivo é somente para leitura (read)
+"""
