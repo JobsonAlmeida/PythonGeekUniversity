@@ -10,7 +10,6 @@ Obs.: Nas versões 2.3 um pacote python deveria conter dentro dele um arquivo ch
 manter compatibilidade. Com a presença do arquivo __init__ as versõs 2.x conseguem saber que o diretório
 no qual este arquivo está inserido é um pacote
 
-
 """
 
 from geek import geek1, geek2
@@ -31,3 +30,6 @@ print(geek4.funcao4())
 
 print(funcao1(6,9))
 print(funcao4())
+
+
+
