@@ -40,3 +40,4 @@ print(next(it))
 # automaticamente também.
 for n in Contador(1,61):
     print(n)
+
