@@ -333,3 +333,4 @@ del p2.valor # deletando a referência p2. Podemos deletar qualquer atributo da 
 
 print(p1.__dict__) # O método dict devolve um dicionário com os atributos de instância do objeto
 print(p2.__dict__)
+
