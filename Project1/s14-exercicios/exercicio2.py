@@ -39,13 +39,14 @@ class Pessoa:
 
 
 class Agenda:
-    __contatos = []
 
+    def __init__(self):
+        self.__contatos = []
     def armazenar_contato(self, contato):
         self.__contatos.append(contato)
 
-    def remover_contato(self, indice):
-        del self.__contatos[indice]
+    def remover_contato(self, contato):
+        self.__contatos.remove(contato)
 
     def buscar_contato(self, nome):
         for indice, contato in enumerate(self.__contatos):
@@ -60,17 +61,22 @@ class Agenda:
         self.__contatos[indice].print()
 
 pessoa1 = Pessoa("José Pereira", "12/03/2000", "jose@gmail.com")
+pessoa11 = Pessoa("José Pereira", "12/03/2000", "jose2@gmail.com")
 pessoa2 = Pessoa("Carla Aguiar", "02/08/1995", "carla@email.com")
 pessoa3 = Pessoa("Marcela da Silva", "01/07/1990", "marcela@email.com")
 
 agenda = Agenda()
 
 agenda.armazenar_contato(pessoa1)
+agenda.armazenar_contato(pessoa11)
 agenda.armazenar_contato(pessoa2)
 agenda.armazenar_contato(pessoa3)
-
-agenda.remover_contato(0)
-agenda.buscar_contato("Carla Aguiar")
-agenda.imprimir_contato(1)
 agenda.imprimir_agenda()
+
+print("-------------------")
+agenda.remover_contato(pessoa11)
+agenda.imprimir_agenda()
+# agenda.buscar_contato("Carla Aguiar")
+# agenda.imprimir_contato(1)
+# agenda.imprimir_agenda()
 

@@ -10,8 +10,8 @@ permitir que seja informado um número de canal para efetuar a troca
 class Televisao:
     def __init__(self):
         self.__status = "desligada"
-        self.__volume = 100
-        self.__canal = 2
+        self.__volume = 0
+        self.__canal = 0
 
     def get_status(self):
         print(f"Status: {self.__status}")
