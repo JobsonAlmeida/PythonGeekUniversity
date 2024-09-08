@@ -30,16 +30,18 @@ class Veiculo:
 
 # Testando
 
-veiculo1 = Veiculo("Honda", "HR-V")
+if __name__ == "__main__":
 
-print(veiculo1)
+    veiculo1 = Veiculo("Honda", "HR-V")
 
-print(veiculo1.marca)
-veiculo1.marca = "BMW"
-print(veiculo1.marca)
+    print(veiculo1)
 
-print(veiculo1.modelo)
-veiculo1.modelo = "Astra"
-print(veiculo1.modelo)
+    print(veiculo1.marca)
+    veiculo1.marca = "BMW"
+    print(veiculo1.marca)
 
-print(veiculo1)
+    print(veiculo1.modelo)
+    veiculo1.modelo = "Astra"
+    print(veiculo1.modelo)
+
+    print(veiculo1)
