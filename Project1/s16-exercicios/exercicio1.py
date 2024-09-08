@@ -28,6 +28,10 @@ class Veiculo:
     def __str__(self):
         return f'marca: {self.__marca}, modelo: {self.__modelo}'
 
+    def imprimir(self):
+        print(f'marca: {self.__marca}, modelo: {self.__modelo}')
+
+
 # Testando
 
 if __name__ == "__main__":

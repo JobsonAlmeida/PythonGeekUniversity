@@ -23,6 +23,10 @@ class Carro(Veiculo):
     def __str__(self):
         return f'marca: {self._Veiculo__marca}, modelo: {self._Veiculo__modelo}, portas: {self.portas}'
 
+    def imprimir(self):
+        super().imprimir() # We could use the imprimir method from the super class
+        print(f'marca: {self._Veiculo__marca}, modelo: {self._Veiculo__modelo}, portas: {self.portas}')
+
 if __name__ == "__main__":
     carro1 = Carro("Honda", "HR-V", "GHD56845")
 

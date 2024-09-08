@@ -18,3 +18,5 @@ if __name__ == "__main__":
     print(carro1.modelo)
 
     print(carro1)
+
+    carro1.imprimir()
