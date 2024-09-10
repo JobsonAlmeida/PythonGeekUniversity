@@ -34,6 +34,10 @@ class Animal:
     def __init__(self, nome):
         self.__nome = nome
 
+    @property
+    def nome(self):
+        return self.__nome
+
     def comer(self):
         print(f"{self.__nome} está comendo...")
 
@@ -51,11 +55,22 @@ class Cachorro(Animal):
         super().__init__(nome)
 
     def late(self):
-        print(f"{self._Animal__nome} está latindo...")
+        print(f"{self.nome} está latindo...")
 
 
 felix = Gato("Félix")
 pluto = Cachorro("Pluto")
 
-with open("animal.pickle", 'wb') as arquivo:
+with open("animais.pickle", 'wb') as arquivo:
     pickle.dump((felix, pluto), arquivo)
+
+with open("animais.pickle", 'rb') as arquivo:
+    gato, cachorro = pickle.load(arquivo)
+    print(f"O gato chama-se {gato.nome}")
+    gato.mia()
+    print(f"O tipo do gato é {type(gato)}")
+    print(f"O cachorro chama-se {cachorro.nome}")
+    cachorro.late()
+    print(f"O tipo do cachorro é{type(cachorro)}")
+
+
