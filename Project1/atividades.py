@@ -20,8 +20,7 @@ def dormir(num_horas):
 
 
 def eh_engracada(pessoa):
-    # comediantes = ['Jim Carrey', 'Bozo']
-    # if pessoa in comediantes:
-    #     return True
-    # return False
-    pass
+    comediantes = ['Jim Carrey', 'Bozo']
+    if pessoa in comediantes:
+        return True
+    return False

@@ -3,7 +3,7 @@
 
 import unittest
 
-from atividades import comer, dormir
+from atividades import comer, dormir, eh_engracada
 
 """
 O arquivo de teste é um arquivo separadao. O arquivo de teste está no mesmo projeto que o arquivo que contém o 
@@ -48,5 +48,10 @@ class AtividadesTestes(unittest.TestCase):
             'Ptz! Dormi muito! Estou atrasado para o trabalho!'
         )
 
+    def test_eh_engracada(self):
+        self.assertFalse(eh_engracada("Sergio Malandro"))
+        self.assertTrue(eh_engracada("Jim Carrey"), "Deveria ser engraçado")
+
 if __name__ == "__main__":
     unittest.main() # Esse main, varre o arquivo verifica todos as classes que são TestCase e executam um a um
+
