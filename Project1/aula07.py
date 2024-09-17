@@ -39,3 +39,4 @@ print(p.__dict__)
 
 # print(p.__annotations__) # O objeto não tem __annotations__
 print(p.andar.__annotations__) # O método tem __annotations__
+
