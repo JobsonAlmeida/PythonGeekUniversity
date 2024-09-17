@@ -10,3 +10,8 @@ print(cabecalho("geek university"))
 print(cabecalho("geek university", "geek"))
 
 cabecalho(texto="abc")
+
+texto: str
+
+texto2 : str
+
